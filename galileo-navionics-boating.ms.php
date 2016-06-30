@@ -4,7 +4,7 @@
         $mapsource = '<?xml version="1.0" encoding="UTF-8"?>
 <customMapSource>
 <name>Navionics Boating</name>
-<url>http://backend.navionics.io/tile/{$z}/{$x}/{$y}?LAYERS=config_2_60.00_0&TRANSPARENT=FALSE&UGC=TRUE&navtoken={$navtoken}</url>
+<url>http://backend.navionics.io/tile/{$z}/{$x}/{$y}?LAYERS=config_1_18.29_0&TRANSPARENT=FALSE&UGC=TRUE&navtoken={$navtoken}</url>
 </customMapSource>';
 
         $ch = curl_init($url);
