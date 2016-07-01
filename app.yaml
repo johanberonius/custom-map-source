@@ -7,3 +7,6 @@ handlers:
 
 - url: /galileo-navionics-sonar.ms
   script: galileo-navionics-sonar.ms.php
+
+- url: /galileo-eniro-navionics.ms
+  script: galileo-eniro-navionics.ms.php
