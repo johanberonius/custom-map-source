@@ -10,3 +10,6 @@ handlers:
 
 - url: /galileo-eniro-navionics.ms
   script: galileo-eniro-navionics.ms.php
+
+- url: /
+  script: index.html
