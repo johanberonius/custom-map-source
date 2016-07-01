@@ -11,5 +11,8 @@ handlers:
 - url: /galileo-eniro-navionics.ms
   script: galileo-eniro-navionics.ms.php
 
+- url: /navionics-boating-tile/\d+/\d+/\d+
+  script: navionics-boating-tile.php
+
 - url: /
   script: index.html
