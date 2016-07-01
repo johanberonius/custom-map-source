@@ -1,6 +1,6 @@
 <?php
-$url = 'http://backend.navionics.io/tile/get_key/Navionics_internalpurpose_00001/webapp.navionics.com';
-$referer = 'https://webapp.navionics.com';
+require 'navtoken.php';
+$navtoken = get_navtoken();
 $mapsource = '<?xml version="1.0" encoding="UTF-8"?>
 <customMapSource>
 <name>Eniro + Navionics Boating</name>
@@ -15,15 +15,7 @@ $mapsource = '<?xml version="1.0" encoding="UTF-8"?>
 </layers>
 </customMapSource>';
 
-$ch = curl_init($url);
-curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-curl_setopt($ch, CURLOPT_HEADER, 0);
-curl_setopt($ch, CURLOPT_REFERER, $referer);
-$navtoken = curl_exec($ch);
-$info = curl_getinfo($ch);
-curl_close($ch);
-
-if ($info["http_code"] == 200) {
+if ($navtoken) {
     header('Content-type: application/x-galileo');
     echo str_replace('{$navtoken}', urlencode($navtoken), $mapsource);
 } else {
