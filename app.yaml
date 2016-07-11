@@ -15,7 +15,9 @@ handlers:
   script: navionics-boating-tile.php
 
 - url: /(.+\.ms)$
-  script: \1
+  static_files: \1
+  upload: .+\.ms$
+  mime_type: application/x-galileo
 
 - url: /
   script: index.html
