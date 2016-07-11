@@ -19,5 +19,9 @@ handlers:
   upload: .+\.ms$
   mime_type: application/x-galileo
 
+- url: /(.+\.png)$
+  static_files: \1
+  upload: .+\.png$
+
 - url: /
   script: index.html
