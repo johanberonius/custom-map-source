@@ -14,5 +14,8 @@ handlers:
 - url: /navionics-boating-tile/\d+/\d+/\d+
   script: navionics-boating-tile.php
 
+- url: /(.+\.ms)$
+  script: \1
+
 - url: /
   script: index.html
