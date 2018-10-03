@@ -9,6 +9,7 @@ $mapsource = '<?xml version="1.0" encoding="UTF-8"?>
 
 if ($navtoken) {
     header('Content-type: application/x-galileo');
+    header('Content-Disposition: attachment');
     echo str_replace('{$navtoken}', urlencode($navtoken), $mapsource);
 } else {
     header('Content-type: text/plain');
