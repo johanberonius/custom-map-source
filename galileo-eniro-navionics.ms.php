@@ -10,7 +10,7 @@ $mapsource = '<?xml version="1.0" encoding="UTF-8"?>
 <serverParts>map01 map02 map03 map04</serverParts>
 </layer>
 <layer>
-<url>http://backend.navionics.io/tile/{$z}/{$x}/{$y}?LAYERS=config_1_6.00_0&TRANSPARENT=TRUE&UGC=TRUE&navtoken={$navtoken}</url>
+<url>http://backend.navionics.io/tile/{$z}/{$x}/{$y}?LAYERS=config_1_6.00_0&amp;TRANSPARENT=TRUE&amp;UGC=TRUE&amp;navtoken={$navtoken}</url>
 </layer>
 </layers>
 </customMapSource>';
