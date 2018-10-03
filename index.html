@@ -32,6 +32,7 @@ li > a > img {
 }
 li > a > sup,
 p > sup {
+  color: #a00;
   font-weight: bold;
 }
 </style>
@@ -48,14 +49,14 @@ p > sup {
 <li><a href="galileo-google-maps-satellite.ms"><img src="galileo-google-maps-satellite.png">Google Maps Satellite</a></li>
 <li><a href="galileo-openseamap.ms"><img src="galileo-openseamap.png">OpenSeaMap</a></li>
 <li><a href="galileo-opensledmap.ms"><img src="galileo-opensledmap.png">OpenSledMap</a></li>
-<li><a href="galileo-navionics-boating.ms"><img src="galileo-navionics-boating.png">Navionics Boating</a><a href="#navionics-notes" title="Notes on Navionics"><sup>*</sup></a></li>
-<li><a href="galileo-navionics-sonar.ms"><img src="galileo-navionics-sonar.png">Navionics Sonar</a><a href="#navionics-notes" title="Notes on Navionics"><sup>*</sup></a></li>
+<li><a href="galileo-navionics-boating.ms"><img src="galileo-navionics-boating.png"><del>Navionics Boating</del></a><a href="#navionics-notes" title="Notes on Navionics"><sup>*</sup></a></li>
+<li><a href="galileo-navionics-sonar.ms"><img src="galileo-navionics-sonar.png"><del>Navionics Sonar</del></a><a href="#navionics-notes" title="Notes on Navionics"><sup>*</sup></a></li>
 </ul>
 
 <h2>Norway, Sweden, Finland, Denmark  &amp; Poland</h2>
 <ul>
 <li><a href="galileo-eniro-2x.ms"><img src="galileo-eniro-2x.png">Eniro</a></li>
-<li><a href="galileo-eniro-navionics.ms"><img src="galileo-eniro-navionics.png">Eniro + Navionics</a><a href="#navionics-notes" title="Notes on Navionics"><sup>*</sup></a></li>
+<li><a href="galileo-eniro-navionics.ms"><img src="galileo-eniro-navionics.png">Eniro + <del>Navionics</del></a><a href="#navionics-notes" title="Notes on Navionics"><sup>*</sup></a></li>
 </ul>
 
 <h2>Norway, Sweden, Finland &amp; Denmark</h2>
@@ -88,8 +89,13 @@ p > sup {
 <li><a href="galileo-nztopo-maps.ms"><img src="galileo-nztopo-maps.png">NZTopo Maps </a></li>
 </ul>
 
-<p id="navionics-notes"><sup>*</sup> <i>Notes on Navionics: A token is used to validate the map source that will expire after 24 hours.
-Any downloaded map tiles will still be available offline. To be able to download new map tiles add the map source again to get a fresh token.</i></p>
+<p id="navionics-notes">
+  <sup>*</sup> <i>Notes on Navionics:<br>
+  &mdash; Navionics is not currerntly working due to that loading of map tiles from other origins than <a href="https://webapp.navionics.com/">https://webapp.navionics.com/</a> is beeing blocked..<br>
+  &mdash; A token is used to validate the map source that will expire after 24 hours.
+    Any downloaded map tiles will still be available offline. To be able to download new map tiles add the map source again to get a fresh token.<br>
+  </i>
+</p>
 
 <a href="https://github.com/johanberonius/custom-map-source.appspot.com"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
 
