@@ -6,7 +6,7 @@
 <url>http://static.hitta.se/tile/v3/4_2x/{$z}/{$x}/{$invY}</url>
 </layer>
 <layer>
-<url>https://tiles.skoterleder.org/tiles/{$z}/{$x}/{$y}.png</url>
+<url>https://overl.skoterleder.org/tiles/{$z}/{$x}/{$y}.png</url>
 </layer>
 </layers>
 </customMapSource>
