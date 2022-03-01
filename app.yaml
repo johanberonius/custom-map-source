@@ -25,5 +25,9 @@ handlers:
   static_files: \1
   upload: .+\.png$
 
+- url: /(.+\.jpg)$
+  static_files: \1
+  upload: .+\.jpg$
+
 - url: /
   script: index.html
